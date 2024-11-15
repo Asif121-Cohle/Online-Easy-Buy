@@ -4,6 +4,8 @@
  */
 package User;
 
+import java.awt.Color;
+
 /**
  *
  * @author HP
@@ -16,7 +18,8 @@ public class Purchase extends javax.swing.JFrame {
     public Purchase() {
         initComponents();
     }
-
+    Color textPrimaryColor = new Color(102,120,138);
+    Color primaryColor = new Color(42,58,73);
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -154,9 +157,7 @@ public class Purchase extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 789, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -167,7 +168,12 @@ public class Purchase extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-        System.exit(0);
+        setVisible(false);
+        UserDashboard.jPanel4.setBackground(primaryColor);
+        UserDashboard.jPanel8.setBackground(primaryColor);
+        UserDashboard.jLabel5.setForeground(textPrimaryColor);
+        UserDashboard.jLabel6.setVisible(true);
+        UserDashboard.jLabel19.setVisible(false);
     }//GEN-LAST:event_jLabel12MouseClicked
 
     /**

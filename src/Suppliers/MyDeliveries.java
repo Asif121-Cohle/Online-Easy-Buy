@@ -4,6 +4,13 @@
  */
 package Suppliers;
 
+import static Suppliers.SupplierDashboard.jLabel15;
+import static Suppliers.SupplierDashboard.jLabel7;
+import static Suppliers.SupplierDashboard.jLabel8;
+import static Suppliers.SupplierDashboard.jPanel10;
+import static Suppliers.SupplierDashboard.jPanel7;
+import java.awt.Color;
+
 /**
  *
  * @author HP
@@ -16,7 +23,8 @@ public class MyDeliveries extends javax.swing.JFrame {
     public MyDeliveries() {
         initComponents();
     }
-
+    Color textPrimaryColor = new Color(102,120,138);
+    Color primaryColor = new Color(42,58,73);
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -117,7 +125,12 @@ public class MyDeliveries extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-        System.exit(0);
+        setVisible(false);
+        SupplierDashboard.jPanel7.setBackground(primaryColor);
+        SupplierDashboard.jPanel10.setBackground(primaryColor);
+        SupplierDashboard.jLabel7.setForeground(textPrimaryColor);
+        SupplierDashboard.jLabel8.setVisible(true);
+        SupplierDashboard.jLabel15.setVisible(false);
     }//GEN-LAST:event_jLabel12MouseClicked
 
     /**
@@ -148,10 +161,8 @@ public class MyDeliveries extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MyDeliveries().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new MyDeliveries().setVisible(true);
         });
     }
 

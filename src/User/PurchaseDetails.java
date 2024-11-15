@@ -4,6 +4,8 @@
  */
 package User;
 
+import java.awt.Color;
+
 /**
  *
  * @author HP
@@ -16,7 +18,8 @@ public class PurchaseDetails extends javax.swing.JFrame {
     public PurchaseDetails() {
         initComponents();
     }
-
+    Color textPrimaryColor = new Color(102,120,138);
+    Color primaryColor = new Color(42,58,73);
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -125,7 +128,12 @@ public class PurchaseDetails extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
-        System.exit(0);
+        setVisible(false);
+        UserDashboard.jPanel7.setBackground(primaryColor);
+        UserDashboard.jPanel11.setBackground(primaryColor);
+        UserDashboard.jLabel7.setForeground(textPrimaryColor);
+        UserDashboard.jLabel8.setVisible(true);
+        UserDashboard.jLabel20.setVisible(false);
     }//GEN-LAST:event_jLabel12MouseClicked
 
     /**

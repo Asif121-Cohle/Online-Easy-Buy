@@ -105,6 +105,7 @@ public class UserAccount extends javax.swing.JFrame {
 
         jComboBox1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "What's you favourite color?", "What's your favourtite pet?", "What's your hobby?" }));
+        jComboBox1.setSelectedIndex(-1);
         jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 320, 30));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N

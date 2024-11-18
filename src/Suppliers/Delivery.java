@@ -11,6 +11,8 @@ import static Suppliers.SupplierDashboard.jPanel4;
 import static Suppliers.SupplierDashboard.jPanel8;
 import java.awt.Color;
 
+import javax.swing.table.TableColumn;
+
 /**
  *
  * @author HP
@@ -22,6 +24,18 @@ public class Delivery extends javax.swing.JFrame {
      */
     public Delivery() {
         initComponents();
+         adjustTableProperties();
+    }
+     private void adjustTableProperties()
+   {
+        //jTable2.setRowHeight(30);
+        int[] columnWidths ={100,100,100,100,100,120,100,100,100,150,120,150,150,100};
+        for(int i=0;i< columnWidths.length;i++)
+        {
+            TableColumn column = jTable1.getColumnModel().getColumn(i);
+            column.setPreferredWidth(columnWidths[i]);
+        }
+        
     }
     Color textPrimaryColor = new Color(102,120,138);
     Color primaryColor = new Color(42,58,73);
@@ -40,11 +54,12 @@ public class Delivery extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(25, 118, 221));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 153));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -85,6 +100,8 @@ public class Delivery extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/search.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -97,7 +114,9 @@ public class Delivery extends javax.swing.JFrame {
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(336, 336, 336)
+                        .addGap(7, 7, 7)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(292, 292, 292)
                         .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -111,7 +130,8 @@ public class Delivery extends javax.swing.JFrame {
                         .addGap(36, 36, 36)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 362, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(17, Short.MAX_VALUE))
@@ -183,6 +203,7 @@ public class Delivery extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;

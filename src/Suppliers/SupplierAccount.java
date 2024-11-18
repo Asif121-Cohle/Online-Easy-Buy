@@ -42,7 +42,6 @@ public class SupplierAccount extends javax.swing.JFrame {
         jTextField4 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
         jTextField7 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -55,14 +54,15 @@ public class SupplierAccount extends javax.swing.JFrame {
         BtnSave = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(25, 118, 221));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 30)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 102, 102));
         jLabel2.setText("Sign UP");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 30, 110, 40));
 
@@ -89,13 +89,10 @@ public class SupplierAccount extends javax.swing.JFrame {
         jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 320, 30));
 
         jTextField6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, 320, 30));
+        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, 320, 30));
 
         jTextField7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 230, 320, 30));
-
-        jComboBox1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 110, 320, 30));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -126,7 +123,7 @@ public class SupplierAccount extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Address Line 1(State & Area):");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 150, 200, 20));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 150, 230, 20));
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
@@ -135,7 +132,7 @@ public class SupplierAccount extends javax.swing.JFrame {
 
         BtnBack.setBackground(new java.awt.Color(242, 242, 242));
         BtnBack.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        BtnBack.setForeground(new java.awt.Color(25, 118, 221));
+        BtnBack.setForeground(new java.awt.Color(0, 102, 102));
         BtnBack.setText("DELETE");
         jPanel1.add(BtnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 290, 120, 30));
 
@@ -152,7 +149,7 @@ public class SupplierAccount extends javax.swing.JFrame {
 
         BtnSave.setBackground(new java.awt.Color(242, 242, 242));
         BtnSave.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        BtnSave.setForeground(new java.awt.Color(25, 118, 221));
+        BtnSave.setForeground(new java.awt.Color(0, 102, 102));
         BtnSave.setText("UPDATE");
         jPanel1.add(BtnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 290, 120, 30));
 
@@ -167,8 +164,15 @@ public class SupplierAccount extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 0, 33, 32));
 
-        jLabel8.setText("jLabel8");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, -1, 40));
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/search.png"))); // NOI18N
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(356, 290, 30, 30));
+
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 173, 320, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -207,6 +211,10 @@ public class SupplierAccount extends javax.swing.JFrame {
         SupplierDashboard.jLabel17.setVisible(true);
     }//GEN-LAST:event_jLabel12MouseClicked
 
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -243,7 +251,6 @@ public class SupplierAccount extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnBack;
     private javax.swing.JButton BtnSave;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -259,6 +266,7 @@ public class SupplierAccount extends javax.swing.JFrame {
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;

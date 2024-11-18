@@ -39,6 +39,8 @@ public class ForgotPassword extends javax.swing.JFrame {
         BtnBack = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         BtnSave = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(25, 118, 221));
@@ -77,8 +79,8 @@ public class ForgotPassword extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Enter Email:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 90, -1));
+        jLabel3.setText("Enter Email Address:");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 160, -1));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -127,6 +129,12 @@ public class ForgotPassword extends javax.swing.JFrame {
             }
         });
         jPanel1.add(BtnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 120, 30));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/search.png"))); // NOI18N
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 111, -1, 30));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/rsz_hide_1.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 290, 30, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -201,9 +209,11 @@ public class ForgotPassword extends javax.swing.JFrame {
     private javax.swing.JButton BtnBack;
     private javax.swing.JButton BtnSave;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;

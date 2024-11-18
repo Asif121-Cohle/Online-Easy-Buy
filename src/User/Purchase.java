@@ -5,6 +5,7 @@
 package User;
 
 import java.awt.Color;
+import javax.swing.table.TableColumn;
 
 /**
  *
@@ -17,6 +18,19 @@ public class Purchase extends javax.swing.JFrame {
      */
     public Purchase() {
         initComponents();
+        adjustTableProperties();
+        
+    }
+   private void adjustTableProperties()
+   {
+        //jTable2.setRowHeight(30);
+        int[] columnWidths ={100,150,120,80,80,100};
+        for(int i=0;i< columnWidths.length;i++)
+        {
+            TableColumn column = jTable2.getColumnModel().getColumn(i);
+            column.setPreferredWidth(columnWidths[i]);
+        }
+        
     }
     Color textPrimaryColor = new Color(102,120,138);
     Color primaryColor = new Color(42,58,73);
@@ -39,15 +53,16 @@ public class Purchase extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        BtnAdd = new javax.swing.JButton();
+        BtnPurchase = new javax.swing.JButton();
+        Btnprint = new javax.swing.JButton();
+        BtnClear = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -106,31 +121,31 @@ public class Purchase extends javax.swing.JFrame {
                 jLabel12MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 0, 33, 32));
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 0, 33, 32));
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(459, 61, 315, 28));
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 145, 219, 28));
         jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 214, 219, 28));
         jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(16, 283, 219, 28));
 
-        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 102, 102));
-        jButton1.setText("ADD");
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, 103, 37));
+        BtnAdd.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        BtnAdd.setForeground(new java.awt.Color(0, 102, 102));
+        BtnAdd.setText("ADD");
+        jPanel1.add(BtnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, 103, 37));
 
-        jButton2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 102, 102));
-        jButton2.setText("PURCHASE");
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 480, -1, 37));
+        BtnPurchase.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        BtnPurchase.setForeground(new java.awt.Color(0, 102, 102));
+        BtnPurchase.setText("PURCHASE");
+        jPanel1.add(BtnPurchase, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 480, -1, 37));
 
-        jButton3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 102, 102));
-        jButton3.setText("PRINT");
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 103, 34));
+        Btnprint.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        Btnprint.setForeground(new java.awt.Color(0, 102, 102));
+        Btnprint.setText("PRINT");
+        jPanel1.add(Btnprint, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 103, 34));
 
-        jButton4.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(0, 102, 102));
-        jButton4.setText("CLEAR");
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 530, 130, 34));
+        BtnClear.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        BtnClear.setForeground(new java.awt.Color(0, 102, 102));
+        BtnClear.setText("CLEAR");
+        jPanel1.add(BtnClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 530, 130, 34));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -153,15 +168,21 @@ public class Purchase extends javax.swing.JFrame {
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 114, -1));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Total:0.0");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, 452, 28));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/search.png"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 60, 30, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 791, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 814, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -218,16 +239,17 @@ public class Purchase extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton BtnAdd;
+    private javax.swing.JButton BtnClear;
+    private javax.swing.JButton BtnPurchase;
+    private javax.swing.JButton Btnprint;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

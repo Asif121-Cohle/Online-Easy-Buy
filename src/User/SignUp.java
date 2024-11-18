@@ -49,16 +49,16 @@ public class SignUp extends javax.swing.JFrame {
         BtnBack = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         BtnSave = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(25, 118, 221));
 
-        jPanel1.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 30)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 102, 102));
         jLabel2.setText("Sign UP");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, 110, 40));
 
@@ -103,39 +103,57 @@ public class SignUp extends javax.swing.JFrame {
 
         jComboBox1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "What's Your favourite product here?", "What's Your favourite food ?", "What's Your favourite movie?", "What's Your highest priced Product here?", " " }));
+        jComboBox1.setSelectedIndex(-1);
         jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 320, 30));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("User Id:");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 60, 20));
 
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Email:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 40, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 60, -1));
 
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Phone:");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Password:");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, -1));
 
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Username:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 60, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 80, -1));
 
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Security Question:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, -1, -1));
 
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Answer:");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 450, -1, -1));
 
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Address Line 1(State & Area):");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, -1, -1));
 
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Address Line 2(Country):");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 570, -1, -1));
 
         BtnBack.setBackground(new java.awt.Color(242, 242, 242));
         BtnBack.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        BtnBack.setForeground(new java.awt.Color(25, 118, 221));
+        BtnBack.setForeground(new java.awt.Color(0, 102, 102));
         BtnBack.setText("BACK");
         jPanel1.add(BtnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 640, 120, 30));
 
@@ -152,12 +170,12 @@ public class SignUp extends javax.swing.JFrame {
 
         BtnSave.setBackground(new java.awt.Color(242, 242, 242));
         BtnSave.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        BtnSave.setForeground(new java.awt.Color(25, 118, 221));
+        BtnSave.setForeground(new java.awt.Color(0, 102, 102));
         BtnSave.setText("SAVE");
         jPanel1.add(BtnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 640, 120, 30));
 
-        jLabel12.setText("jLabel12");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 350, -1, -1));
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/rsz_hide_1.png"))); // NOI18N
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 350, -1, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -169,7 +187,7 @@ public class SignUp extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 646, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 684, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -232,7 +250,7 @@ public class SignUp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

@@ -68,12 +68,17 @@ public class UserDashboard extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel2.setBackground(new java.awt.Color(64, 194, 150));
+        jPanel1.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel1.setForeground(new java.awt.Color(0, 204, 153));
+
+        jPanel2.setBackground(new java.awt.Color(0, 204, 153));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 30)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("ONLINE EASY BUY");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 102, 102));
         jLabel2.setText("Logout");
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -82,6 +87,7 @@ public class UserDashboard extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 102, 102));
         jLabel3.setText("user@gmail.com");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -110,11 +116,12 @@ public class UserDashboard extends javax.swing.JFrame {
                         .addGap(25, 25, 25))))
         );
 
-        jPanel3.setBackground(new java.awt.Color(42, 58, 72));
+        jPanel3.setBackground(new java.awt.Color(0, 204, 153));
         jPanel3.setForeground(new java.awt.Color(102, 132, 138));
 
-        jPanel5.setBackground(new java.awt.Color(51, 51, 255));
+        jPanel5.setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel4.setBackground(new java.awt.Color(0, 102, 102));
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -143,7 +150,7 @@ public class UserDashboard extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel4.setBackground(new java.awt.Color(42, 58, 72));
+        jPanel4.setBackground(new java.awt.Color(0, 153, 153));
         jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel4MouseClicked(evt);
@@ -153,7 +160,7 @@ public class UserDashboard extends javax.swing.JFrame {
 
         jLabel5.setBackground(new java.awt.Color(102, 132, 138));
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(102, 132, 138));
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("  Purchase");
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -162,7 +169,7 @@ public class UserDashboard extends javax.swing.JFrame {
         });
         jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 140, -1));
 
-        jPanel8.setBackground(new java.awt.Color(42, 58, 73));
+        jPanel8.setBackground(new java.awt.Color(0, 102, 102));
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -183,11 +190,11 @@ public class UserDashboard extends javax.swing.JFrame {
         jLabel19.setText("jLabel6");
         jPanel4.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, -1));
 
-        jPanel9.setBackground(new java.awt.Color(42, 58, 72));
+        jPanel9.setBackground(new java.awt.Color(0, 153, 153));
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(102, 132, 138));
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("  My Account");
         jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -196,7 +203,7 @@ public class UserDashboard extends javax.swing.JFrame {
         });
         jPanel9.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 130, -1));
 
-        jPanel10.setBackground(new java.awt.Color(42, 58, 73));
+        jPanel10.setBackground(new java.awt.Color(0, 102, 102));
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -217,11 +224,11 @@ public class UserDashboard extends javax.swing.JFrame {
         jLabel21.setText("jLabel6");
         jPanel9.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, 20));
 
-        jPanel7.setBackground(new java.awt.Color(42, 58, 72));
+        jPanel7.setBackground(new java.awt.Color(0, 153, 153));
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(102, 132, 138));
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("  Purchase Details");
         jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -230,7 +237,7 @@ public class UserDashboard extends javax.swing.JFrame {
         });
         jPanel7.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 140, -1));
 
-        jPanel11.setBackground(new java.awt.Color(42, 58, 73));
+        jPanel11.setBackground(new java.awt.Color(0, 102, 102));
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -278,34 +285,36 @@ public class UserDashboard extends javax.swing.JFrame {
                 .addGap(383, 383, 383))
         );
 
-        jPanel6.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel6.setBackground(new java.awt.Color(0, 204, 153));
+        jPanel6.setForeground(new java.awt.Color(0, 204, 153));
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("My Statistics");
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(102, 132, 138));
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Total Categories:");
 
         jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(102, 132, 138));
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Total Products:");
 
         jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(102, 132, 138));
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Total Purchase:");
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(102, 132, 138));
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("0");
 
         jLabel17.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(102, 132, 138));
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("0");
 
         jLabel18.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(102, 132, 138));
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("0.0");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);

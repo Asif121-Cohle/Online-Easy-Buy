@@ -1,5 +1,8 @@
 package User;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author HP
@@ -55,6 +58,11 @@ public class Login extends javax.swing.JFrame {
         setAutoRequestFocus(false);
         setBackground(new java.awt.Color(25, 118, 221));
         setUndecorated(true);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 102));
@@ -264,6 +272,21 @@ public class Login extends javax.swing.JFrame {
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        for (double i=0;i<=1;i+=0.1)
+        {
+            String s = ""+ i;
+            float f = Float.parseFloat(s);
+            this.setOpacity(f);
+            try{
+                Thread.sleep(40);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+            }
+           
+        }
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments

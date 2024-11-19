@@ -48,14 +48,15 @@ public class AddSuppliers extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        BtnBack = new javax.swing.JButton();
+        BtnClear = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         BtnSave = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(25, 118, 221));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
@@ -94,33 +95,46 @@ public class AddSuppliers extends javax.swing.JFrame {
         jTextField7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 320, -1));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Supplier ID:");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 90, 20));
 
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Email:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 154, 40, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 144, 60, 30));
 
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Phone:");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Password:");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
 
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Username:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 60, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 90, -1));
 
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Address Line 1(State & Area):");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, -1));
 
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Address Line 2(Country):");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, -1, -1));
 
-        BtnBack.setBackground(new java.awt.Color(242, 242, 242));
-        BtnBack.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        BtnBack.setForeground(new java.awt.Color(25, 118, 221));
-        BtnBack.setText("Clear");
-        jPanel1.add(BtnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 120, 30));
+        BtnClear.setBackground(new java.awt.Color(242, 242, 242));
+        BtnClear.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        BtnClear.setForeground(new java.awt.Color(0, 102, 102));
+        BtnClear.setText("Clear");
+        jPanel1.add(BtnClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 120, 30));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
@@ -135,15 +149,18 @@ public class AddSuppliers extends javax.swing.JFrame {
 
         BtnSave.setBackground(new java.awt.Color(242, 242, 242));
         BtnSave.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        BtnSave.setForeground(new java.awt.Color(25, 118, 221));
+        BtnSave.setForeground(new java.awt.Color(0, 102, 102));
         BtnSave.setText("SAVE");
         jPanel1.add(BtnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 120, 30));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/rsz_hide_1.png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 290, 30, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -210,7 +227,7 @@ public class AddSuppliers extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BtnBack;
+    private javax.swing.JButton BtnClear;
     private javax.swing.JButton BtnSave;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -219,6 +236,7 @@ public class AddSuppliers extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;

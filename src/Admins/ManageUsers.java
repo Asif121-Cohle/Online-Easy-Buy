@@ -9,6 +9,7 @@ import static Admins.AdminDashboard.jLabel40;
 import static Admins.AdminDashboard.jLabel9;
 import static Admins.AdminDashboard.jPanel15;
 import java.awt.Color;
+import javax.swing.table.TableColumn;
 
 /**
  *
@@ -21,7 +22,20 @@ public class ManageUsers extends javax.swing.JFrame {
      */
     public ManageUsers() {
         initComponents();
+        adjustTableProperties();
     }
+    private void adjustTableProperties()
+   {
+        //jTable2.setRowHeight(30);
+        int[] columnWidths ={100,100,100,100,100,150,100,120,120};
+        for(int i=0;i< columnWidths.length;i++)
+        {
+            TableColumn column = jTable1.getColumnModel().getColumn(i);
+            column.setPreferredWidth(columnWidths[i]);
+        }
+        
+    }
+    
     Color textPrimaryColor = new Color(102,120,138);
     Color primaryColor = new Color(42,58,73);
     /**
@@ -52,22 +66,23 @@ public class ManageUsers extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        BtnBack = new javax.swing.JButton();
+        BtnClear = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
-        BtnSave = new javax.swing.JButton();
+        BtnUpdate = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        BtnBack1 = new javax.swing.JButton();
+        BtnDelete = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         jTextField8 = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(25, 118, 221));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
@@ -110,42 +125,61 @@ public class ManageUsers extends javax.swing.JFrame {
         jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, 320, 30));
 
         jComboBox1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "What's your favourite colour?", "What's your hobby?", "What's your favourite movie?" }));
+        jComboBox1.setSelectedIndex(-1);
         jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 80, 320, 30));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("User Id:");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 60, 20));
 
         jLabel3.setBackground(new java.awt.Color(25, 118, 221));
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Email:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 40, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 70, -1));
 
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Phone:");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Password:");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, -1));
 
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Username:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 70, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 90, -1));
 
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Security Question:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 60, -1, -1));
 
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Answer:");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 120, -1, -1));
 
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Address Line 1(State & Area):");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 180, -1, -1));
 
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Address Line 2(Country):");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 240, -1, -1));
 
-        BtnBack.setBackground(new java.awt.Color(242, 242, 242));
-        BtnBack.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        BtnBack.setForeground(new java.awt.Color(25, 118, 221));
-        BtnBack.setText("Clear");
-        jPanel1.add(BtnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 350, 320, 30));
+        BtnClear.setBackground(new java.awt.Color(242, 242, 242));
+        BtnClear.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        BtnClear.setForeground(new java.awt.Color(0, 102, 102));
+        BtnClear.setText("Clear");
+        jPanel1.add(BtnClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 350, 320, 30));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
@@ -158,11 +192,11 @@ public class ManageUsers extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, -280, 33, 32));
 
-        BtnSave.setBackground(new java.awt.Color(242, 242, 242));
-        BtnSave.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        BtnSave.setForeground(new java.awt.Color(25, 118, 221));
-        BtnSave.setText("UPDATE");
-        jPanel1.add(BtnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 310, 120, 30));
+        BtnUpdate.setBackground(new java.awt.Color(242, 242, 242));
+        BtnUpdate.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        BtnUpdate.setForeground(new java.awt.Color(0, 102, 102));
+        BtnUpdate.setText("UPDATE");
+        jPanel1.add(BtnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 310, 120, 30));
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
@@ -175,26 +209,26 @@ public class ManageUsers extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 0, 33, 32));
 
-        jLabel13.setText("jLabel13");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 320, -1, 30));
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/rsz_hide_1.png"))); // NOI18N
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 320, 30, 30));
 
-        BtnBack1.setBackground(new java.awt.Color(242, 242, 242));
-        BtnBack1.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
-        BtnBack1.setForeground(new java.awt.Color(25, 118, 221));
-        BtnBack1.setText("DELETE");
-        jPanel1.add(BtnBack1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 310, 120, 30));
+        BtnDelete.setBackground(new java.awt.Color(242, 242, 242));
+        BtnDelete.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        BtnDelete.setForeground(new java.awt.Color(0, 102, 102));
+        BtnDelete.setText("DELETE");
+        jPanel1.add(BtnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 310, 120, 30));
 
         jLabel14.setForeground(new java.awt.Color(204, 204, 204));
         jLabel14.setText("..............................................................................................................................................................................................................................................");
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 720, 20));
 
         jTextField8.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jPanel1.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 400, 300, 30));
+        jPanel1.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 400, 300, 30));
 
         jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Search");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 400, 60, 20));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, 50, 30));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -212,19 +246,25 @@ public class ManageUsers extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        jTable1.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 720, 170));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 720, 210));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/search.png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 396, -1, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 755, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 755, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 623, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 657, Short.MAX_VALUE)
         );
 
         pack();
@@ -290,9 +330,9 @@ public class ManageUsers extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BtnBack;
-    private javax.swing.JButton BtnBack1;
-    private javax.swing.JButton BtnSave;
+    private javax.swing.JButton BtnClear;
+    private javax.swing.JButton BtnDelete;
+    private javax.swing.JButton BtnUpdate;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -301,6 +341,7 @@ public class ManageUsers extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

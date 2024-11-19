@@ -27,7 +27,7 @@ public class MyDeliveries extends javax.swing.JFrame {
       private void adjustTableProperties()
    {
         //jTable2.setRowHeight(30);
-        int[] columnWidths ={100,100,100,100,100,120,100,100,100,150,120,150,150,100};
+        int[] columnWidths ={100,100,100,100,100,120,100,100,100,150,120,120,120};
         for(int i=0;i< columnWidths.length;i++)
         {
             TableColumn column = jTable1.getColumnModel().getColumn(i);

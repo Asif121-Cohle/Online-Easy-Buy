@@ -186,7 +186,8 @@ public class ForgotPassword extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnSaveActionPerformed
 
     private void BtnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBackActionPerformed
-        // TODO add your handling code here:
+       new Login().setVisible(true);
+       this.dispose();
     }//GEN-LAST:event_BtnBackActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened

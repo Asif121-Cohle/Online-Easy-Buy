@@ -174,6 +174,11 @@ public class SignUp extends javax.swing.JFrame {
         BtnBack.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         BtnBack.setForeground(new java.awt.Color(0, 102, 102));
         BtnBack.setText("BACK");
+        BtnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnBackActionPerformed(evt);
+            }
+        });
         jPanel1.add(BtnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 640, 120, 30));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
@@ -254,6 +259,11 @@ public class SignUp extends javax.swing.JFrame {
         int y = evt.getYOnScreen();
         this.setLocation(x - xx, y - xy);
     }//GEN-LAST:event_jPanel1MouseDragged
+
+    private void BtnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBackActionPerformed
+        new Login().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_BtnBackActionPerformed
 
     /**
      * @param args the command line arguments

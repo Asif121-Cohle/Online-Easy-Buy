@@ -57,6 +57,7 @@ public class AddSuppliers extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         BtnSave = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -154,6 +155,7 @@ public class AddSuppliers extends javax.swing.JFrame {
         BtnClear.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         BtnClear.setForeground(new java.awt.Color(0, 102, 102));
         BtnClear.setText("Clear");
+        BtnClear.setActionCommand("CLEAR");
         jPanel1.add(BtnClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 120, 30));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
@@ -175,6 +177,16 @@ public class AddSuppliers extends javax.swing.JFrame {
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/rsz_hide_1.png"))); // NOI18N
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 290, 30, 30));
+
+        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 102, 102));
+        jButton1.setText("BACK");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 120, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -238,6 +250,12 @@ public class AddSuppliers extends javax.swing.JFrame {
         xy = evt.getY();
     }//GEN-LAST:event_jPanel1MousePressed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+       new AdminDashboard().setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -275,6 +293,7 @@ public class AddSuppliers extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnClear;
     private javax.swing.JButton BtnSave;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

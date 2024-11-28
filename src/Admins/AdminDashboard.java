@@ -199,7 +199,6 @@ public class AdminDashboard extends javax.swing.JFrame {
         );
 
         jPanel4.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel4.setForeground(new java.awt.Color(0, 204, 204));
         jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel4MouseClicked(evt);
@@ -238,7 +237,6 @@ public class AdminDashboard extends javax.swing.JFrame {
         jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, -1));
 
         jPanel9.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel9.setForeground(new java.awt.Color(0, 204, 204));
         jPanel9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel9MouseClicked(evt);
@@ -277,7 +275,6 @@ public class AdminDashboard extends javax.swing.JFrame {
         jPanel9.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, -1));
 
         jPanel10.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel10.setForeground(new java.awt.Color(0, 204, 204));
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel25.setBackground(new java.awt.Color(102, 132, 138));
@@ -311,7 +308,6 @@ public class AdminDashboard extends javax.swing.JFrame {
         jPanel10.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, -1));
 
         jPanel11.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel11.setForeground(new java.awt.Color(0, 204, 204));
         jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel27.setBackground(new java.awt.Color(102, 132, 138));
@@ -345,7 +341,6 @@ public class AdminDashboard extends javax.swing.JFrame {
         jPanel11.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, -1));
 
         jPanel20.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel20.setForeground(new java.awt.Color(0, 204, 204));
         jPanel20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel35.setBackground(new java.awt.Color(102, 132, 138));
@@ -379,7 +374,6 @@ public class AdminDashboard extends javax.swing.JFrame {
         jPanel20.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, -1));
 
         jPanel22.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel22.setForeground(new java.awt.Color(0, 204, 204));
         jPanel22.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel22MouseClicked(evt);
@@ -418,7 +412,6 @@ public class AdminDashboard extends javax.swing.JFrame {
         jPanel22.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, -1));
 
         jPanel24.setBackground(new java.awt.Color(0, 153, 153));
-        jPanel24.setForeground(new java.awt.Color(0, 204, 204));
         jPanel24.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel47.setBackground(new java.awt.Color(102, 132, 138));

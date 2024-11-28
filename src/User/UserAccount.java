@@ -56,6 +56,7 @@ public class UserAccount extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         BtnSave = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -173,7 +174,7 @@ public class UserAccount extends javax.swing.JFrame {
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 270, -1, -1));
 
         BtnBack.setBackground(new java.awt.Color(242, 242, 242));
-        BtnBack.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        BtnBack.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         BtnBack.setForeground(new java.awt.Color(0, 102, 102));
         BtnBack.setText("DELETE");
         jPanel1.add(BtnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 350, 120, 30));
@@ -190,7 +191,7 @@ public class UserAccount extends javax.swing.JFrame {
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, -280, 33, 32));
 
         BtnSave.setBackground(new java.awt.Color(242, 242, 242));
-        BtnSave.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        BtnSave.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         BtnSave.setForeground(new java.awt.Color(0, 102, 102));
         BtnSave.setText("UPDATE");
         jPanel1.add(BtnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 350, 120, 30));
@@ -206,6 +207,16 @@ public class UserAccount extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 0, 33, 32));
 
+        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 102, 102));
+        jButton1.setText("BACK");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 400, 120, 30));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -214,7 +225,7 @@ public class UserAccount extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 413, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
         );
 
         pack();
@@ -271,6 +282,11 @@ public class UserAccount extends javax.swing.JFrame {
         this.setLocation(x - xx, y - xy);
     }//GEN-LAST:event_jPanel1MouseDragged
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       new UserDashboard().setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -309,6 +325,7 @@ public class UserAccount extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnBack;
     private javax.swing.JButton BtnSave;
+    private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

@@ -65,6 +65,7 @@ public class ManageSuppliers extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -162,8 +163,8 @@ public class ManageSuppliers extends javax.swing.JFrame {
         BtnBack.setBackground(new java.awt.Color(242, 242, 242));
         BtnBack.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         BtnBack.setForeground(new java.awt.Color(0, 102, 102));
-        BtnBack.setText("Clear");
-        jPanel1.add(BtnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 320, 30));
+        BtnBack.setText("CLEAR");
+        jPanel1.add(BtnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 120, 30));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
@@ -243,6 +244,16 @@ public class ManageSuppliers extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/search.png"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(696, 356, 30, 40));
 
+        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 102, 102));
+        jButton1.setText("BACK");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 290, 120, 30));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -313,6 +324,12 @@ public class ManageSuppliers extends javax.swing.JFrame {
         this.setLocation(x - xx, y - xy);
     }//GEN-LAST:event_jPanel1MouseDragged
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+       new AdminDashboard().setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -350,6 +367,7 @@ public class ManageSuppliers extends javax.swing.JFrame {
     private javax.swing.JButton BtnBack;
     private javax.swing.JButton BtnBack1;
     private javax.swing.JButton BtnSave;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

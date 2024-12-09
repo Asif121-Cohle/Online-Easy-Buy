@@ -2,7 +2,7 @@ package User;
 
 import Admins.AdminDashboard;
 import Suppliers.SupplierDashboard;
-import connection.MyConnection;
+//import connection.MyConnection;
 import javax.swing.ButtonGroup;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -400,7 +400,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel3MouseDragged
 
     private void BtnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLoginActionPerformed
-        if(isEmpty())
+       /* if(isEmpty())
         {
             String email = jTextField1.getText();
             String password =String.valueOf(LoginPassword.getPassword());
@@ -416,7 +416,7 @@ public class Login extends javax.swing.JFrame {
                     ResultSet rs = ps.executeQuery();
                  if(rs.next())
                  {
-                     UserDashboard ud = new UserDashboard();
+                     MainView ud = new MainView();
                      ud.setVisible(true);
                      ud.pack();
                      this.dispose();
@@ -481,7 +481,7 @@ public class Login extends javax.swing.JFrame {
                 }
                         
             }
-        }
+        }*/
     }//GEN-LAST:event_BtnLoginActionPerformed
 
     /**

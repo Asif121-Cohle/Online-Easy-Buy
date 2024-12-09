@@ -2,24 +2,62 @@
 package Suppliers;
 
 import User.Login;
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
 import java.awt.Color;
+import java.awt.GridLayout;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 
 /**
  *
  * @author HP
  */
 public class SupplierDashboard extends javax.swing.JFrame {
-
-    /**
-     * Creates new form SupplierDashboard
-     */
+    //private CardLayout cardLayout;
+    //private JPanel mainContentPanel;
+ 
     public SupplierDashboard() {
         initComponents();
         init();
-    }
+    }/*
+        setTitle("Supplier Dashboard");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(800, 600);
+
+        // Sidebar panel
+        JPanel sidebar = new JPanel();
+        sidebar.setLayout(new GridLayout(5, 1));
+        JButton deliveryButton = new JButton("Delivery");
+        JButton myDeliveriesButton = new JButton("My Deliveries");
+        JButton myAccountButton = new JButton("My Account");
+        sidebar.add(deliveryButton);
+        sidebar.add(myDeliveriesButton);
+        sidebar.add(myAccountButton);
+
+        add(sidebar, BorderLayout.WEST);
+
+        // Main content panel
+        cardLayout = new CardLayout();
+        mainContentPanel = new JPanel(cardLayout);
+        add(mainContentPanel, BorderLayout.CENTER);
+
+        // Add panels to the CardLayout
+        mainContentPanel.add(new Delivery(), "Delivery");
+        mainContentPanel.add(new MyDeliveries(), "MyDeliveries");
+        mainContentPanel.add(new SupplierAccount(), "MyAccount");
+
+        // Button action listeners
+        deliveryButton.addActionListener(e -> cardLayout.show(mainContentPanel, "Delivery"));
+        myDeliveriesButton.addActionListener(e -> cardLayout.show(mainContentPanel, "MyDeliveries"));
+        myAccountButton.addActionListener(e -> cardLayout.show(mainContentPanel, "MyAccount"));*/
+
+        //setVisible(true);
+    //}
     private Color textSelectionColor;
     private Color seletionColor;
     Color sideColor = new Color(0,153,153);
@@ -298,7 +336,7 @@ public class SupplierDashboard extends javax.swing.JFrame {
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(203, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel6.setBackground(new java.awt.Color(0, 204, 153));
@@ -363,13 +401,12 @@ public class SupplierDashboard extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(34, 34, 34)
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addContainerGap(262, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -417,6 +454,7 @@ public class SupplierDashboard extends javax.swing.JFrame {
         Delivery delivery= new Delivery();
         delivery.setVisible(true);
         delivery.pack();
+        this.dispose();
     }//GEN-LAST:event_jLabel5MouseClicked
 
     private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
@@ -432,6 +470,7 @@ public class SupplierDashboard extends javax.swing.JFrame {
         MyDeliveries myDeliveries= new MyDeliveries();
         myDeliveries.setVisible(true);
         myDeliveries.pack();
+        this.dispose();
     }//GEN-LAST:event_jLabel7MouseClicked
 
     private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
@@ -442,7 +481,8 @@ public class SupplierDashboard extends javax.swing.JFrame {
         jLabel17.setVisible(true);
         SupplierAccount supplierAccount= new SupplierAccount();
         supplierAccount.setVisible(true);
-        supplierAccount.pack();       
+        supplierAccount.pack();  
+        this.dispose();
     }//GEN-LAST:event_jLabel9MouseClicked
 
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked

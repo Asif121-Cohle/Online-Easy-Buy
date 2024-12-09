@@ -144,8 +144,8 @@ public class AdminDashboard extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel2)
                 .addGap(32, 32, 32))
         );
@@ -547,9 +547,9 @@ public class AdminDashboard extends javax.swing.JFrame {
                         .addComponent(jLabel16))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(jLabel14)
-                        .addGap(12, 12, 12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel17)))
-                .addGap(155, 155, 155)
+                .addGap(161, 161, 161)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -682,6 +682,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         ManageCategory manageCategory = new ManageCategory();
         manageCategory.setVisible(true);
         manageCategory.pack();
+        this.dispose();
     }//GEN-LAST:event_jLabel27MouseClicked
 
     private void jLabel35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel35MouseClicked
@@ -693,6 +694,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         SelectSupplier selectSupplier = new SelectSupplier();
         selectSupplier.setVisible(true);
         selectSupplier.pack();
+        this.dispose();
     }//GEN-LAST:event_jLabel35MouseClicked
 
     private void jLabel43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel43MouseClicked
@@ -704,6 +706,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         ManageProducts manageProducts = new ManageProducts();
         manageProducts.setVisible(true);
         manageProducts.pack();
+        this.dispose();
     }//GEN-LAST:event_jLabel43MouseClicked
 
     private void jLabel47MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel47MouseClicked
@@ -715,6 +718,7 @@ public class AdminDashboard extends javax.swing.JFrame {
          Transaction transaction = new Transaction();
         transaction.setVisible(true);
         transaction.pack();
+        this.dispose();
     }//GEN-LAST:event_jLabel47MouseClicked
 
     private void jPanel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel22MouseClicked
@@ -730,6 +734,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         ManageUsers manageUsers = new ManageUsers();
         manageUsers.setVisible(true);
         manageUsers.pack();
+        this.dispose();
     }//GEN-LAST:event_jLabel9MouseClicked
 
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
@@ -741,6 +746,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         ManageUsers manageUsers = new ManageUsers();
         manageUsers.setVisible(true);
         manageUsers.pack();
+        this.dispose();
     }//GEN-LAST:event_jPanel4MouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
@@ -752,6 +758,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         AddSuppliers addSuppliers = new AddSuppliers();
         addSuppliers.setVisible(true);
         addSuppliers.pack();
+        this.dispose();
     }//GEN-LAST:event_jLabel5MouseClicked
 
     private void jLabel25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseClicked
@@ -763,6 +770,7 @@ public class AdminDashboard extends javax.swing.JFrame {
         ManageSuppliers manageSuppliers = new ManageSuppliers();
         manageSuppliers.setVisible(true);
         manageSuppliers.pack();
+        this.dispose();
     }//GEN-LAST:event_jLabel25MouseClicked
 
     private void jPanel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseClicked

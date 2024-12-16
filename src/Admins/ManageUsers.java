@@ -6,7 +6,6 @@ package Admins;
 
 import static Admins.AdminDashboard.jLabel36;
 import static Admins.AdminDashboard.jLabel40;
-import static Admins.AdminDashboard.jLabel9;
 import static Admins.AdminDashboard.jPanel15;
 import User.Login;
 import java.awt.Color;
@@ -14,6 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.table.TableColumn;
+import static Admins.AdminDashboard.ManageUser;
 
 /**
  *
@@ -53,15 +53,15 @@ public class ManageUsers extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        UserIDTextField = new javax.swing.JTextField();
+        EmailTextField = new javax.swing.JTextField();
+        PhoneTextField = new javax.swing.JTextField();
         jPasswordField1 = new javax.swing.JPasswordField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        UserNameTextField = new javax.swing.JTextField();
+        SecAns = new javax.swing.JTextField();
+        StateTextField = new javax.swing.JTextField();
+        CountryTextField = new javax.swing.JTextField();
+        SecQuestion = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -74,17 +74,17 @@ public class ManageUsers extends javax.swing.JFrame {
         BtnClear = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         BtnUpdate = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
+        CrossLabel = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         BtnDelete = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
+        SearchUsers = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
+        BackLabel = new javax.swing.JLabel();
+        LogoutLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -107,49 +107,49 @@ public class ManageUsers extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 204, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        UserIDTextField.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        UserIDTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                UserIDTextFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 320, 30));
+        jPanel1.add(UserIDTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 320, 30));
 
-        jTextField2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        EmailTextField.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        EmailTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                EmailTextFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 320, 30));
+        jPanel1.add(EmailTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 320, 30));
 
-        jTextField3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        PhoneTextField.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        PhoneTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                PhoneTextFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 320, 30));
+        jPanel1.add(PhoneTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 320, 30));
 
         jPasswordField1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 320, 30));
 
-        jTextField4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 320, 30));
+        UserNameTextField.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jPanel1.add(UserNameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 320, 30));
 
-        jTextField5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 140, 320, 30));
+        SecAns.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jPanel1.add(SecAns, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 140, 320, 30));
 
-        jTextField6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 200, 320, 30));
+        StateTextField.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jPanel1.add(StateTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 200, 320, 30));
 
-        jTextField7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, 320, 30));
+        CountryTextField.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jPanel1.add(CountryTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, 320, 30));
 
-        jComboBox1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "What's your favourite colour?", "What's your hobby?", "What's your favourite movie?" }));
-        jComboBox1.setSelectedIndex(-1);
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 80, 320, 30));
+        SecQuestion.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        SecQuestion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "What's your favourite colour?", "What's your hobby?", "What's your favourite movie?" }));
+        SecQuestion.setSelectedIndex(-1);
+        jPanel1.add(SecQuestion, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 80, 320, 30));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -220,16 +220,16 @@ public class ManageUsers extends javax.swing.JFrame {
         BtnUpdate.setText("UPDATE");
         jPanel1.add(BtnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 310, -1, 30));
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("x");
-        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+        CrossLabel.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
+        CrossLabel.setForeground(new java.awt.Color(255, 255, 255));
+        CrossLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CrossLabel.setText("x");
+        CrossLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel12MouseClicked(evt);
+                CrossLabelMouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 0, 33, 30));
+        jPanel1.add(CrossLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 0, 33, 30));
 
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/rsz_hide_1.png"))); // NOI18N
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 320, 30, 30));
@@ -244,8 +244,8 @@ public class ManageUsers extends javax.swing.JFrame {
         jLabel14.setText("..............................................................................................................................................................................................................................................");
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, 720, 20));
 
-        jTextField8.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jPanel1.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 400, 300, 30));
+        SearchUsers.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        jPanel1.add(SearchUsers, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 400, 300, 30));
 
         jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
@@ -276,24 +276,24 @@ public class ManageUsers extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/search.png"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 400, -1, 40));
 
-        jLabel16.setText("jLabel7");
-        jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
+        BackLabel.setText("jLabel7");
+        BackLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel16MouseClicked(evt);
+                BackLabelMouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.add(BackLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jLabel17.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/CART.png"))); // NOI18N
-        jLabel17.setText("Logout");
-        jLabel17.addMouseListener(new java.awt.event.MouseAdapter() {
+        LogoutLabel.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        LogoutLabel.setForeground(new java.awt.Color(0, 102, 102));
+        LogoutLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/CART.png"))); // NOI18N
+        LogoutLabel.setText("Logout");
+        LogoutLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel17MouseClicked(evt);
+                LogoutLabelMouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 0, -1, -1));
+        jPanel1.add(LogoutLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -310,26 +310,26 @@ public class ManageUsers extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void UserIDTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UserIDTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_UserIDTextFieldActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void EmailTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmailTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_EmailTextFieldActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void PhoneTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PhoneTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_PhoneTextFieldActionPerformed
 
-    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+    private void CrossLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CrossLabelMouseClicked
         setVisible(false);
         AdminDashboard.jPanel9.setBackground(primaryColor);
         AdminDashboard.jPanel15.setBackground(primaryColor);
-        AdminDashboard.jLabel9.setForeground(textPrimaryColor);
+        AdminDashboard.ManageUser.setForeground(textPrimaryColor);
         AdminDashboard.jLabel36.setVisible(true);
         AdminDashboard.jLabel40.setVisible(false);
-    }//GEN-LAST:event_jLabel12MouseClicked
+    }//GEN-LAST:event_CrossLabelMouseClicked
 
     private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
         System.exit(0);
@@ -361,20 +361,20 @@ public class ManageUsers extends javax.swing.JFrame {
         this.setLocation(x - xx, y - xy);
     }//GEN-LAST:event_formMouseDragged
 
-    private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
+    private void BackLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackLabelMouseClicked
         AdminDashboard mainView = new AdminDashboard();
         mainView.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jLabel16MouseClicked
+    }//GEN-LAST:event_BackLabelMouseClicked
 
-    private void jLabel17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MouseClicked
+    private void LogoutLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogoutLabelMouseClicked
 
         int a = JOptionPane.showConfirmDialog(this, "Do You Want To Logout Now?", "Logout", JOptionPane.YES_NO_OPTION);
         if (a == 0) {
             new Login().setVisible(true);
             this.dispose();
         }
-    }//GEN-LAST:event_jLabel17MouseClicked
+    }//GEN-LAST:event_LogoutLabelMouseClicked
 
     /**
      * @param args the command line arguments
@@ -410,19 +410,27 @@ public class ManageUsers extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel BackLabel;
     private javax.swing.JButton BtnClear;
     private javax.swing.JButton BtnDelete;
     private javax.swing.JButton BtnUpdate;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JTextField CountryTextField;
+    private javax.swing.JLabel CrossLabel;
+    private javax.swing.JTextField EmailTextField;
+    private javax.swing.JLabel LogoutLabel;
+    private javax.swing.JTextField PhoneTextField;
+    private javax.swing.JTextField SearchUsers;
+    private javax.swing.JTextField SecAns;
+    private javax.swing.JComboBox<String> SecQuestion;
+    private javax.swing.JTextField StateTextField;
+    private javax.swing.JTextField UserIDTextField;
+    private javax.swing.JTextField UserNameTextField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -435,13 +443,5 @@ public class ManageUsers extends javax.swing.JFrame {
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
     // End of variables declaration//GEN-END:variables
 }

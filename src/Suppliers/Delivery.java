@@ -5,7 +5,6 @@
 package Suppliers;
 
 import static Suppliers.SupplierDashboard.jLabel14;
-import static Suppliers.SupplierDashboard.jLabel5;
 import static Suppliers.SupplierDashboard.jLabel6;
 import static Suppliers.SupplierDashboard.jPanel4;
 import static Suppliers.SupplierDashboard.jPanel8;
@@ -23,6 +22,7 @@ import javax.swing.JTextArea;
 import javax.swing.SwingConstants;
 
 import javax.swing.table.TableColumn;
+import static Suppliers.SupplierDashboard.DeliveryLabel;
 
 /**
  *
@@ -78,12 +78,12 @@ public class Delivery extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jLabel12 = new javax.swing.JLabel();
+        CrossLabel = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        ProductSearchTextField = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        BackLabel = new javax.swing.JLabel();
+        LogoutLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -124,13 +124,13 @@ public class Delivery extends javax.swing.JFrame {
         jTable1.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
         jScrollPane1.setViewportView(jTable1);
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("x");
-        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+        CrossLabel.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
+        CrossLabel.setForeground(new java.awt.Color(255, 255, 255));
+        CrossLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CrossLabel.setText("x");
+        CrossLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel12MouseClicked(evt);
+                CrossLabelMouseClicked(evt);
             }
         });
 
@@ -138,28 +138,28 @@ public class Delivery extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Products Search");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        ProductSearchTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                ProductSearchTextFieldActionPerformed(evt);
             }
         });
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/search.png"))); // NOI18N
 
-        jLabel13.setText("jLabel7");
-        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+        BackLabel.setText("jLabel7");
+        BackLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel13MouseClicked(evt);
+                BackLabelMouseClicked(evt);
             }
         });
 
-        jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/CART.png"))); // NOI18N
-        jLabel14.setText("Logout");
-        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+        LogoutLabel.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        LogoutLabel.setForeground(new java.awt.Color(0, 102, 102));
+        LogoutLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/CART.png"))); // NOI18N
+        LogoutLabel.setText("Logout");
+        LogoutLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel14MouseClicked(evt);
+                LogoutLabelMouseClicked(evt);
             }
         });
 
@@ -177,16 +177,16 @@ public class Delivery extends javax.swing.JFrame {
                         .addGap(0, 21, Short.MAX_VALUE)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ProductSearchTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(298, 298, 298))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel13)
+                        .addComponent(BackLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel14)
+                        .addComponent(LogoutLabel)
                         .addGap(26, 26, 26)
-                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(CrossLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())))
         );
         jPanel1Layout.setVerticalGroup(
@@ -196,14 +196,14 @@ public class Delivery extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(12, 12, 12)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel14)))
-                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(BackLabel)
+                            .addComponent(LogoutLabel)))
+                    .addComponent(CrossLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(ProductSearchTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(17, 17, 17)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 362, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -227,18 +227,18 @@ public class Delivery extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+    private void CrossLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CrossLabelMouseClicked
         setVisible(false);
         SupplierDashboard.jPanel4.setBackground(primaryColor);
         SupplierDashboard.jPanel8.setBackground(primaryColor);
-        SupplierDashboard.jLabel5.setForeground(textPrimaryColor);
+        SupplierDashboard.DeliveryLabel.setForeground(textPrimaryColor);
         SupplierDashboard.jLabel6.setVisible(true);
         SupplierDashboard.jLabel14.setVisible(false);
-    }//GEN-LAST:event_jLabel12MouseClicked
+    }//GEN-LAST:event_CrossLabelMouseClicked
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void ProductSearchTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProductSearchTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_ProductSearchTextFieldActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         for (double i=0;i<=1;i+=0.1)
@@ -266,20 +266,20 @@ public class Delivery extends javax.swing.JFrame {
         this.setLocation(x - xx, y - xy);
     }//GEN-LAST:event_jPanel1MouseDragged
 
-    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+    private void BackLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackLabelMouseClicked
         SupplierDashboard mainView = new SupplierDashboard();
         mainView.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jLabel13MouseClicked
+    }//GEN-LAST:event_BackLabelMouseClicked
 
-    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+    private void LogoutLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogoutLabelMouseClicked
 
         int a = JOptionPane.showConfirmDialog(this, "Do You Want To Logout Now?", "Logout", JOptionPane.YES_NO_OPTION);
         if (a == 0) {
             new Login().setVisible(true);
             this.dispose();
         }
-    }//GEN-LAST:event_jLabel14MouseClicked
+    }//GEN-LAST:event_LogoutLabelMouseClicked
 
     /**
      * @param args the command line arguments
@@ -315,14 +315,14 @@ public class Delivery extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel BackLabel;
+    private javax.swing.JLabel CrossLabel;
+    private javax.swing.JLabel LogoutLabel;
+    private javax.swing.JTextField ProductSearchTextField;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

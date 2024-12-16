@@ -18,6 +18,8 @@ public class WomenAccessories extends javax.swing.JFrame {
      */
     public WomenAccessories() {
         initComponents();
+        Product5.setVisible(false);
+        Product5Txt.setVisible(false);
     }
     Color textPrimaryColor = new Color(102,120,138);
     Color primaryColor = new Color(42,58,73);
@@ -32,18 +34,20 @@ public class WomenAccessories extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        Product1Txt = new javax.swing.JLabel();
+        Product2Txt = new javax.swing.JLabel();
+        Header = new javax.swing.JLabel();
+        Product3Txt = new javax.swing.JLabel();
+        Product4Txt = new javax.swing.JLabel();
+        LogoutLabel = new javax.swing.JLabel();
+        BackLabel = new javax.swing.JLabel();
+        CrossLabel = new javax.swing.JLabel();
+        Product1 = new javax.swing.JButton();
+        Product2 = new javax.swing.JButton();
+        Product3 = new javax.swing.JButton();
+        Product4 = new javax.swing.JButton();
+        Product5 = new javax.swing.JButton();
+        Product5Txt = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -51,138 +55,105 @@ public class WomenAccessories extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 204, 153));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
+        Product1Txt.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        Product1Txt.setForeground(new java.awt.Color(0, 102, 102));
+        Product1Txt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Product1Txt.setText("Cake");
+        jPanel1.add(Product1Txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 60, 30));
+
+        Product2Txt.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        Product2Txt.setForeground(new java.awt.Color(0, 102, 102));
+        Product2Txt.setText("Nuggets");
+        jPanel1.add(Product2Txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 240, -1, 24));
+
+        Header.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        Header.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Header.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/rsz_istockphoto-918978530-612x612.png"))); // NOI18N
+        Header.setText("CheckOut Women Accessories Section");
+        jPanel1.add(Header, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 440, 47));
+
+        Product3Txt.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        Product3Txt.setForeground(new java.awt.Color(0, 102, 102));
+        Product3Txt.setText("Pizza");
+        jPanel1.add(Product3Txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 230, 40, 30));
+
+        Product4Txt.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        Product4Txt.setForeground(new java.awt.Color(0, 102, 102));
+        Product4Txt.setText("Burgers");
+        jPanel1.add(Product4Txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 71, 31));
+
+        LogoutLabel.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        LogoutLabel.setForeground(new java.awt.Color(0, 102, 102));
+        LogoutLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/CART.png"))); // NOI18N
+        LogoutLabel.setText("Logout");
+        LogoutLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel3MouseClicked(evt);
+                LogoutLabelMouseClicked(evt);
             }
         });
+        jPanel1.add(LogoutLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 10, 90, -1));
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 128, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 147, -1));
-
-        jPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
+        BackLabel.setText("jLabel7");
+        BackLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel2MouseClicked(evt);
+                BackLabelMouseClicked(evt);
             }
         });
+        jPanel1.add(BackLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 164, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 128, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, -1, -1));
-
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Cake");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 60, 30));
-
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel2.setText("Nuggets");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, -1, 24));
-
-        jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
+        CrossLabel.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
+        CrossLabel.setForeground(new java.awt.Color(255, 255, 255));
+        CrossLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CrossLabel.setText("x");
+        CrossLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel4MouseClicked(evt);
+                CrossLabelMouseClicked(evt);
             }
         });
+        jPanel1.add(CrossLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 0, 33, 32));
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 149, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, -1, 128));
-
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/rsz_istockphoto-918978530-612x612.png"))); // NOI18N
-        jLabel3.setText("CheckOut Women Accessories Section");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 440, 47));
-
-        jPanel5.addMouseListener(new java.awt.event.MouseAdapter() {
+        Product1.setText("jButton1");
+        Product1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel5MouseClicked(evt);
+                Product1MouseClicked(evt);
             }
         });
+        jPanel1.add(Product1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 110, 90));
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 113, Short.MAX_VALUE)
-        );
-
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 147, -1));
-
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel4.setText("Pizza");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 270, 40, 30));
-
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel5.setText("Burgers");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, 71, 31));
-
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/CART.png"))); // NOI18N
-        jLabel6.setText("Logout");
-        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+        Product2.setText("jButton1");
+        Product2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel6MouseClicked(evt);
+                Product2MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 10, 90, -1));
+        jPanel1.add(Product2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, 110, 90));
 
-        jLabel7.setText("jLabel7");
-        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+        Product3.setText("jButton1");
+        Product3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel7MouseClicked(evt);
+                Product3MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+        jPanel1.add(Product3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, 110, 90));
 
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("x");
-        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+        Product4.setText("jButton1");
+        Product4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel12MouseClicked(evt);
+                Product4MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 0, 33, 32));
+        jPanel1.add(Product4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 110, 90));
+
+        Product5.setText("jButton1");
+        Product5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Product5MouseClicked(evt);
+            }
+        });
+        jPanel1.add(Product5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 110, 90));
+
+        Product5Txt.setText("jLabel8");
+        jPanel1.add(Product5Txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 400, 50, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -199,57 +170,69 @@ public class WomenAccessories extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+    private void LogoutLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogoutLabelMouseClicked
 
         int a = JOptionPane.showConfirmDialog(this, "Do You Want To Logout Now?", "Logout", JOptionPane.YES_NO_OPTION);
         if (a == 0) {
             new Login().setVisible(true);
             this.dispose();
         }
-    }//GEN-LAST:event_jLabel6MouseClicked
+    }//GEN-LAST:event_LogoutLabelMouseClicked
 
-    private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
-        NavigationTracker.previousFrame = WomenAccessories.this;
-        Purchase purchase = new Purchase();
-        purchase.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jPanel3MouseClicked
-
-    private void jPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseClicked
-        NavigationTracker.previousFrame = WomenAccessories.this;
-        Purchase purchase = new Purchase();
-        purchase.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jPanel2MouseClicked
-
-    private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
-        NavigationTracker.previousFrame = WomenAccessories.this;
-        Purchase purchase = new Purchase();
-        purchase.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jPanel4MouseClicked
-
-    private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
-      NavigationTracker.previousFrame = WomenAccessories.this;
-      Purchase purchase = new Purchase();
-      purchase.setVisible(true);
-      this.dispose();
-    }//GEN-LAST:event_jPanel5MouseClicked
-
-    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+    private void BackLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackLabelMouseClicked
         CheckoutCategory chckoutCate = new CheckoutCategory(); 
         chckoutCate.setVisible(true);            
         this.dispose();                        
-    }//GEN-LAST:event_jLabel7MouseClicked
+    }//GEN-LAST:event_BackLabelMouseClicked
 
-    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+    private void CrossLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CrossLabelMouseClicked
         setVisible(false);
         MainView.jPanel12.setBackground(primaryColor);
         MainView.jPanel13.setBackground(primaryColor);
         MainView.ChckoutCate.setForeground(textPrimaryColor);
         MainView.jLabel23.setVisible(true);
         MainView.jLabel24.setVisible(false);
-    }//GEN-LAST:event_jLabel12MouseClicked
+    }//GEN-LAST:event_CrossLabelMouseClicked
+
+    private void Product1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Product1MouseClicked
+
+        NavigationTracker.previousFrame = WomenAccessories.this;
+        Purchase purchase = new Purchase();
+        purchase.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Product1MouseClicked
+
+    private void Product2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Product2MouseClicked
+
+        NavigationTracker.previousFrame = WomenAccessories.this;
+        Purchase purchase = new Purchase();
+        purchase.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Product2MouseClicked
+
+    private void Product3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Product3MouseClicked
+
+        NavigationTracker.previousFrame = WomenAccessories.this;
+        Purchase purchase = new Purchase();
+        purchase.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Product3MouseClicked
+
+    private void Product4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Product4MouseClicked
+
+        NavigationTracker.previousFrame = WomenAccessories.this;
+        Purchase purchase = new Purchase();
+        purchase.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Product4MouseClicked
+
+    private void Product5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Product5MouseClicked
+
+        NavigationTracker.previousFrame = WomenAccessories.this;
+        Purchase purchase = new Purchase();
+        purchase.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Product5MouseClicked
 
     /**
      * @param args the command line arguments
@@ -285,18 +268,20 @@ public class WomenAccessories extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel BackLabel;
+    private javax.swing.JLabel CrossLabel;
+    private javax.swing.JLabel Header;
+    private javax.swing.JLabel LogoutLabel;
+    private javax.swing.JButton Product1;
+    private javax.swing.JLabel Product1Txt;
+    private javax.swing.JButton Product2;
+    private javax.swing.JLabel Product2Txt;
+    private javax.swing.JButton Product3;
+    private javax.swing.JLabel Product3Txt;
+    private javax.swing.JButton Product4;
+    private javax.swing.JLabel Product4Txt;
+    private javax.swing.JButton Product5;
+    private javax.swing.JLabel Product5Txt;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     // End of variables declaration//GEN-END:variables
 }

@@ -5,7 +5,6 @@
 package Admins;
 
 import static Admins.AdminDashboard.jLabel41;
-import static Admins.AdminDashboard.jLabel5;
 import static Admins.AdminDashboard.jLabel8;
 import static Admins.AdminDashboard.jPanel16;
 import User.Login;
@@ -13,6 +12,7 @@ import java.awt.Color;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import static Admins.AdminDashboard.AddSupplier;
 
 /**
  *
@@ -40,13 +40,13 @@ public class AddSuppliers extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        SupplierIDTextField = new javax.swing.JTextField();
+        EmailTextField = new javax.swing.JTextField();
+        PhoneTextField = new javax.swing.JTextField();
         jPasswordField1 = new javax.swing.JPasswordField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
+        SupplierUserNameTextField = new javax.swing.JTextField();
+        StateTextField = new javax.swing.JTextField();
+        CountryTextField = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -55,11 +55,11 @@ public class AddSuppliers extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         BtnClear = new javax.swing.JButton();
-        jLabel11 = new javax.swing.JLabel();
+        CrossLabel = new javax.swing.JLabel();
         BtnSave = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        LogoutLabel = new javax.swing.JLabel();
+        BackLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -82,41 +82,41 @@ public class AddSuppliers extends javax.swing.JFrame {
         });
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        SupplierIDTextField.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        SupplierIDTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                SupplierIDTextFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 64, 320, -1));
+        jPanel1.add(SupplierIDTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 64, 320, -1));
 
-        jTextField2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        EmailTextField.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        EmailTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                EmailTextFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 320, -1));
+        jPanel1.add(EmailTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 320, -1));
 
-        jTextField3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        PhoneTextField.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        PhoneTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                PhoneTextFieldActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 320, -1));
+        jPanel1.add(PhoneTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 320, -1));
 
         jPasswordField1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 320, -1));
 
-        jTextField4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 320, -1));
+        SupplierUserNameTextField.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jPanel1.add(SupplierUserNameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 320, -1));
 
-        jTextField6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 320, -1));
+        StateTextField.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jPanel1.add(StateTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 320, -1));
 
-        jTextField7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 320, -1));
+        CountryTextField.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jPanel1.add(CountryTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 320, -1));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -160,16 +160,16 @@ public class AddSuppliers extends javax.swing.JFrame {
         BtnClear.setActionCommand("CLEAR");
         jPanel1.add(BtnClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 120, 30));
 
-        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("x");
-        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+        CrossLabel.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
+        CrossLabel.setForeground(new java.awt.Color(255, 255, 255));
+        CrossLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CrossLabel.setText("x");
+        CrossLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel11MouseClicked(evt);
+                CrossLabelMouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, -10, 33, 40));
+        jPanel1.add(CrossLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, 33, 30));
 
         BtnSave.setBackground(new java.awt.Color(242, 242, 242));
         BtnSave.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
@@ -180,24 +180,24 @@ public class AddSuppliers extends javax.swing.JFrame {
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/rsz_hide_1.png"))); // NOI18N
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 290, 30, 30));
 
-        jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/CART.png"))); // NOI18N
-        jLabel14.setText("Logout");
-        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+        LogoutLabel.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        LogoutLabel.setForeground(new java.awt.Color(0, 102, 102));
+        LogoutLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/CART.png"))); // NOI18N
+        LogoutLabel.setText("Logout");
+        LogoutLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel14MouseClicked(evt);
+                LogoutLabelMouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, -1, -1));
+        jPanel1.add(LogoutLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, -1, -1));
 
-        jLabel13.setText("jLabel7");
-        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+        BackLabel.setText("jLabel7");
+        BackLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel13MouseClicked(evt);
+                BackLabelMouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel1.add(BackLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -214,26 +214,26 @@ public class AddSuppliers extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void SupplierIDTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SupplierIDTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_SupplierIDTextFieldActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void EmailTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EmailTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_EmailTextFieldActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void PhoneTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PhoneTextFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_PhoneTextFieldActionPerformed
 
-    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+    private void CrossLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CrossLabelMouseClicked
         setVisible(false);
         AdminDashboard.jPanel4.setBackground(primaryColor);
         AdminDashboard.jPanel16.setBackground(primaryColor);
-        AdminDashboard.jLabel5.setForeground(textPrimaryColor);
+        AdminDashboard.AddSupplier.setForeground(textPrimaryColor);
         AdminDashboard.jLabel8.setVisible(true);
         AdminDashboard.jLabel41.setVisible(false);
-    }//GEN-LAST:event_jLabel11MouseClicked
+    }//GEN-LAST:event_CrossLabelMouseClicked
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         for (double i=0;i<=1;i+=0.1)
@@ -261,20 +261,20 @@ public class AddSuppliers extends javax.swing.JFrame {
         xy = evt.getY();
     }//GEN-LAST:event_jPanel1MousePressed
 
-    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+    private void LogoutLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogoutLabelMouseClicked
 
         int a = JOptionPane.showConfirmDialog(this, "Do You Want To Logout Now?", "Logout", JOptionPane.YES_NO_OPTION);
         if (a == 0) {
             new Login().setVisible(true);
             this.dispose();
         }
-    }//GEN-LAST:event_jLabel14MouseClicked
+    }//GEN-LAST:event_LogoutLabelMouseClicked
 
-    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+    private void BackLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackLabelMouseClicked
         AdminDashboard mainView = new AdminDashboard();
         mainView.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jLabel13MouseClicked
+    }//GEN-LAST:event_BackLabelMouseClicked
 
     /**
      * @param args the command line arguments
@@ -311,13 +311,19 @@ public class AddSuppliers extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel BackLabel;
     private javax.swing.JButton BtnClear;
     private javax.swing.JButton BtnSave;
+    private javax.swing.JTextField CountryTextField;
+    private javax.swing.JLabel CrossLabel;
+    private javax.swing.JTextField EmailTextField;
+    private javax.swing.JLabel LogoutLabel;
+    private javax.swing.JTextField PhoneTextField;
+    private javax.swing.JTextField StateTextField;
+    private javax.swing.JTextField SupplierIDTextField;
+    private javax.swing.JTextField SupplierUserNameTextField;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -326,11 +332,5 @@ public class AddSuppliers extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     // End of variables declaration//GEN-END:variables
 }

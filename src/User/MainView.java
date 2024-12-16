@@ -35,24 +35,24 @@ public class MainView extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         HeaderPnl = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        LogoutLabel = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
+        Purchase = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
+        MyAccount = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
+        PurchaseDetails = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
@@ -61,14 +61,14 @@ public class MainView extends javax.swing.JFrame {
         jPanel13 = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
+        MyStatistics = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
+        CategoryCount = new javax.swing.JLabel();
+        ProductCount = new javax.swing.JLabel();
+        PurchaseTotalPrice = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -98,13 +98,13 @@ public class MainView extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/rsz_istockphoto-918978530-612x612.png"))); // NOI18N
         jLabel1.setText("ONLINE EASY BUY");
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/CART.png"))); // NOI18N
-        jLabel2.setText("Logout");
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+        LogoutLabel.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        LogoutLabel.setForeground(new java.awt.Color(0, 102, 102));
+        LogoutLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/CART.png"))); // NOI18N
+        LogoutLabel.setText("Logout");
+        LogoutLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel2MouseClicked(evt);
+                LogoutLabelMouseClicked(evt);
             }
         });
 
@@ -122,7 +122,7 @@ public class MainView extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(LogoutLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         HeaderPnlLayout.setVerticalGroup(
             HeaderPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -131,7 +131,7 @@ public class MainView extends javax.swing.JFrame {
                 .addGroup(HeaderPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(HeaderPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel2)
+                        .addComponent(LogoutLabel)
                         .addComponent(jLabel3)))
                 .addGap(41, 41, 41))
         );
@@ -180,16 +180,16 @@ public class MainView extends javax.swing.JFrame {
         });
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setBackground(new java.awt.Color(102, 132, 138));
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("  Purchase");
-        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+        Purchase.setBackground(new java.awt.Color(102, 132, 138));
+        Purchase.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        Purchase.setForeground(new java.awt.Color(255, 255, 255));
+        Purchase.setText("  Purchase");
+        Purchase.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel5MouseClicked(evt);
+                PurchaseMouseClicked(evt);
             }
         });
-        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 170, 30));
+        jPanel4.add(Purchase, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 170, 30));
 
         jPanel8.setBackground(new java.awt.Color(0, 102, 102));
 
@@ -213,16 +213,16 @@ public class MainView extends javax.swing.JFrame {
         jPanel9.setBackground(new java.awt.Color(0, 153, 153));
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel9.setBackground(new java.awt.Color(102, 132, 138));
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("  My Account");
-        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+        MyAccount.setBackground(new java.awt.Color(102, 132, 138));
+        MyAccount.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        MyAccount.setForeground(new java.awt.Color(255, 255, 255));
+        MyAccount.setText("  My Account");
+        MyAccount.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel9MouseClicked(evt);
+                MyAccountMouseClicked(evt);
             }
         });
-        jPanel9.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 170, 30));
+        jPanel9.add(MyAccount, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 170, 30));
 
         jPanel10.setBackground(new java.awt.Color(0, 102, 102));
 
@@ -246,16 +246,16 @@ public class MainView extends javax.swing.JFrame {
         jPanel7.setBackground(new java.awt.Color(0, 153, 153));
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setBackground(new java.awt.Color(102, 132, 138));
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("  Purchase Details");
-        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+        PurchaseDetails.setBackground(new java.awt.Color(102, 132, 138));
+        PurchaseDetails.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        PurchaseDetails.setForeground(new java.awt.Color(255, 255, 255));
+        PurchaseDetails.setText("  Purchase Details");
+        PurchaseDetails.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel7MouseClicked(evt);
+                PurchaseDetailsMouseClicked(evt);
             }
         });
-        jPanel7.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 170, 30));
+        jPanel7.add(PurchaseDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 170, 30));
 
         jPanel11.setBackground(new java.awt.Color(0, 102, 102));
 
@@ -340,8 +340,8 @@ public class MainView extends javax.swing.JFrame {
                 .addGap(356, 356, 356))
         );
 
-        jPanel6.setBackground(new java.awt.Color(0, 204, 153));
-        jPanel6.setForeground(new java.awt.Color(0, 204, 153));
+        MyStatistics.setBackground(new java.awt.Color(0, 204, 153));
+        MyStatistics.setForeground(new java.awt.Color(0, 204, 153));
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
@@ -360,57 +360,57 @@ public class MainView extends javax.swing.JFrame {
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Total Purchase:");
 
-        jLabel16.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("0");
+        CategoryCount.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        CategoryCount.setForeground(new java.awt.Color(255, 255, 255));
+        CategoryCount.setText("0");
 
-        jLabel17.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("0");
+        ProductCount.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        ProductCount.setForeground(new java.awt.Color(255, 255, 255));
+        ProductCount.setText("0");
 
-        jLabel18.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setText("0.0");
+        PurchaseTotalPrice.setFont(new java.awt.Font("Times New Roman", 1, 20)); // NOI18N
+        PurchaseTotalPrice.setForeground(new java.awt.Color(255, 255, 255));
+        PurchaseTotalPrice.setText("0.0");
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+        javax.swing.GroupLayout MyStatisticsLayout = new javax.swing.GroupLayout(MyStatistics);
+        MyStatistics.setLayout(MyStatisticsLayout);
+        MyStatisticsLayout.setHorizontalGroup(
+            MyStatisticsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MyStatisticsLayout.createSequentialGroup()
+                .addGroup(MyStatisticsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
+                    .addGroup(MyStatisticsLayout.createSequentialGroup()
                         .addGap(48, 48, 48)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGroup(MyStatisticsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(MyStatisticsLayout.createSequentialGroup()
                                 .addComponent(jLabel14)
                                 .addGap(12, 12, 12)
-                                .addComponent(jLabel17))
-                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addComponent(ProductCount))
+                            .addGroup(MyStatisticsLayout.createSequentialGroup()
                                 .addComponent(jLabel13)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel16)))
+                                .addComponent(CategoryCount)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel15)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel18)))
+                        .addComponent(PurchaseTotalPrice)))
                 .addGap(0, 110, Short.MAX_VALUE))
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
+        MyStatisticsLayout.setVerticalGroup(
+            MyStatisticsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MyStatisticsLayout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addComponent(jLabel11)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(MyStatisticsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
-                    .addComponent(jLabel16)
+                    .addComponent(CategoryCount)
                     .addComponent(jLabel15)
-                    .addComponent(jLabel18))
+                    .addComponent(PurchaseTotalPrice))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(MyStatisticsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel14)
-                    .addComponent(jLabel17))
+                    .addComponent(ProductCount))
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
@@ -422,7 +422,7 @@ public class MainView extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(MyStatistics, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -434,7 +434,7 @@ public class MainView extends javax.swing.JFrame {
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(46, 46, 46)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(MyStatistics, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -465,7 +465,7 @@ private void init()
             jLabel21.setVisible(false);
 
         }
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+    private void LogoutLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogoutLabelMouseClicked
                                   
     int a = JOptionPane.showConfirmDialog(this, "Do You Want To Logout Now?", "Logout", JOptionPane.YES_NO_OPTION);
     if (a == 0) {
@@ -473,9 +473,9 @@ private void init()
         this.dispose();
     } 
 
-    }//GEN-LAST:event_jLabel2MouseClicked
+    }//GEN-LAST:event_LogoutLabelMouseClicked
 
-    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+    private void PurchaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PurchaseMouseClicked
         NavigationTracker.previousFrame = MainView.this;
         /*jPanel4.setBackground(seletionColor);
         jPanel8.setBackground(sideColor);
@@ -486,35 +486,35 @@ private void init()
         purchase.setVisible(true);
         purchase.pack();    
         this.dispose();
-    }//GEN-LAST:event_jLabel5MouseClicked
+    }//GEN-LAST:event_PurchaseMouseClicked
 
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
         
     }//GEN-LAST:event_jPanel4MouseClicked
 
-    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+    private void PurchaseDetailsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PurchaseDetailsMouseClicked
         jPanel7.setBackground(seletionColor);
         jPanel11.setBackground(sideColor);
-        jLabel7.setForeground(textSelectionColor);
+        PurchaseDetails.setForeground(textSelectionColor);
         jLabel8.setVisible(false);
         jLabel20.setVisible(true);
         PurchaseDetails purchaseDetails = new PurchaseDetails();
         purchaseDetails.setVisible(true);
         purchaseDetails.pack(); 
         this.dispose();
-    }//GEN-LAST:event_jLabel7MouseClicked
+    }//GEN-LAST:event_PurchaseDetailsMouseClicked
 
-    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+    private void MyAccountMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MyAccountMouseClicked
         jPanel9.setBackground(seletionColor);
         jPanel10.setBackground(sideColor);
-        jLabel9.setForeground(textSelectionColor);
+        MyAccount.setForeground(textSelectionColor);
         jLabel10.setVisible(false);
         jLabel21.setVisible(true);
         UserAccount userAccount= new UserAccount();
         userAccount.setVisible(true);
         userAccount.pack(); 
         this.dispose();
-    }//GEN-LAST:event_jLabel9MouseClicked
+    }//GEN-LAST:event_MyAccountMouseClicked
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         for (double i=0;i<=1;i+=0.1)
@@ -590,8 +590,16 @@ private void init()
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel CategoryCount;
     public static javax.swing.JLabel ChckoutCate;
     private javax.swing.JPanel HeaderPnl;
+    private javax.swing.JLabel LogoutLabel;
+    public static javax.swing.JLabel MyAccount;
+    private javax.swing.JPanel MyStatistics;
+    private javax.swing.JLabel ProductCount;
+    public static javax.swing.JLabel Purchase;
+    public static javax.swing.JLabel PurchaseDetails;
+    private javax.swing.JLabel PurchaseTotalPrice;
     private javax.swing.JLabel jLabel1;
     public static javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -599,22 +607,15 @@ private void init()
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     public static javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     public static javax.swing.JLabel jLabel20;
     public static javax.swing.JLabel jLabel21;
     public static javax.swing.JLabel jLabel23;
     public static javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    public static javax.swing.JLabel jLabel5;
     public static javax.swing.JLabel jLabel6;
-    public static javax.swing.JLabel jLabel7;
     public static javax.swing.JLabel jLabel8;
-    public static javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     public static javax.swing.JPanel jPanel10;
     public static javax.swing.JPanel jPanel11;
@@ -623,7 +624,6 @@ private void init()
     private javax.swing.JPanel jPanel3;
     public static javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
     public static javax.swing.JPanel jPanel7;
     public static javax.swing.JPanel jPanel8;
     public static javax.swing.JPanel jPanel9;

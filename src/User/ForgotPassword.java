@@ -31,20 +31,21 @@ public class ForgotPassword extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        Header = new javax.swing.JLabel();
+        SecAnswer = new javax.swing.JTextField();
         jPasswordField1 = new javax.swing.JPasswordField();
-        jTextField4 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        EmailAddress = new javax.swing.JTextField();
+        SecQuestion = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         BtnBack = new javax.swing.JButton();
-        jLabel11 = new javax.swing.JLabel();
+        CrossLabel = new javax.swing.JLabel();
         BtnSave = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        BackLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(25, 118, 221));
@@ -68,34 +69,34 @@ public class ForgotPassword extends javax.swing.JFrame {
         });
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 30)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel2.setText("Forgot Password");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, 240, 40));
+        Header.setFont(new java.awt.Font("Times New Roman", 1, 30)); // NOI18N
+        Header.setForeground(new java.awt.Color(0, 102, 102));
+        Header.setText("Forgot Password");
+        jPanel1.add(Header, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, 240, 40));
 
-        jTextField3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        SecAnswer.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        SecAnswer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                SecAnswerActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 320, 30));
+        jPanel1.add(SecAnswer, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 320, 30));
 
         jPasswordField1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 320, 30));
 
-        jTextField4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 320, 30));
+        EmailAddress.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jPanel1.add(EmailAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 320, 30));
 
-        jComboBox1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "What's your favourite color?", "What's your favourite past time?", "what's your favourite movie?" }));
-        jComboBox1.setSelectedIndex(-1);
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        SecQuestion.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        SecQuestion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "What's your favourite color?", "What's your favourite past time?", "what's your favourite movie?" }));
+        SecQuestion.setSelectedIndex(-1);
+        SecQuestion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                SecQuestionActionPerformed(evt);
             }
         });
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 320, 30));
+        jPanel1.add(SecQuestion, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 320, 30));
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -128,16 +129,16 @@ public class ForgotPassword extends javax.swing.JFrame {
         });
         jPanel1.add(BtnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, 120, 30));
 
-        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("x");
-        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+        CrossLabel.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
+        CrossLabel.setForeground(new java.awt.Color(255, 255, 255));
+        CrossLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CrossLabel.setText("x");
+        CrossLabel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel11MouseClicked(evt);
+                CrossLabelMouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 0, 33, 32));
+        jPanel1.add(CrossLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 0, 33, 32));
 
         BtnSave.setBackground(new java.awt.Color(242, 242, 242));
         BtnSave.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
@@ -161,6 +162,14 @@ public class ForgotPassword extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 290, 30, 30));
 
+        BackLabel.setText("jLabel7");
+        BackLabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BackLabelMouseClicked(evt);
+            }
+        });
+        jPanel1.add(BackLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -176,17 +185,17 @@ public class ForgotPassword extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void SecAnswerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SecAnswerActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_SecAnswerActionPerformed
 
-    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+    private void CrossLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CrossLabelMouseClicked
         System.exit(0);
-    }//GEN-LAST:event_jLabel11MouseClicked
+    }//GEN-LAST:event_CrossLabelMouseClicked
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void SecQuestionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SecQuestionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_SecQuestionActionPerformed
 
     private void BtnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSaveActionPerformed
         // TODO add your handling code here:
@@ -227,6 +236,12 @@ public class ForgotPassword extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel1MouseClicked
 
+    private void BackLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BackLabelMouseClicked
+        Login login = new Login();
+        login.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_BackLabelMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -263,12 +278,15 @@ public class ForgotPassword extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel BackLabel;
     private javax.swing.JButton BtnBack;
     private javax.swing.JButton BtnSave;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JLabel CrossLabel;
+    private javax.swing.JTextField EmailAddress;
+    private javax.swing.JLabel Header;
+    private javax.swing.JTextField SecAnswer;
+    private javax.swing.JComboBox<String> SecQuestion;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -276,7 +294,5 @@ public class ForgotPassword extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
 }
